@@ -8,5 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Welcome Message
-        run: echo "Hello Waqar! Welcome to GitHub Actions 🚀"
+      - name: Introduction
+        run: echo "Hello! My name is Waqar Ali."
+
+      - name: Goal
+        run: echo "I want to become an AI Engineer."
+
+      - name: Learning
+        run: echo "Today I learned GitHub Actions!"
