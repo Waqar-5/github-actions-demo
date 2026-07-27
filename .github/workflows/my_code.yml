@@ -4,7 +4,7 @@ on:
   push:
 
 jobs: 
-  codes:
+  code:
     runs-on: ubuntu-latest
 
     steps:
