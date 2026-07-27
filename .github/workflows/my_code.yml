@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: my first code
-        run: Welcome to my first code
+        run: echo "Welcome to my first code"
       
       - name: my 2nd code
-        run: Welcome to my 2nd code
+        run: echo "Welcome to my 2nd code"
       
       - name: my 3rd code
-        run: Welcome to my 4th code
+        run: echo "Welcome to my 4th code"
