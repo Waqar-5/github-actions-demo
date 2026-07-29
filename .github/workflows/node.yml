@@ -1,0 +1,23 @@
+name: Node.js Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  node-demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check Node Version
+        run: node -v
+
+      - name: Check npm Version
+        run: npm -v
