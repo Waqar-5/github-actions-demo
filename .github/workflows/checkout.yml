@@ -1,0 +1,18 @@
+name: Checkout Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Repository
+        uses: actions/checkout@v4
+
+      - name: Show Files
+        run: ls
+
+      - name: Show Current Folder
+        run: pwd
