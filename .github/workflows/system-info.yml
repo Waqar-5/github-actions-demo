@@ -8,23 +8,65 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # Download your repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: "22"
 
+      # Show current directory
       - name: Current Directory
         run: pwd
 
+      # List repository files
       - name: List Files
-        run: ls
+        run: ls -la
 
+      # Show current date
       - name: Current Date
         run: date
 
+      # Show Node.js version
       - name: Node Version
         run: node -v
 
+      # Show npm version
       - name: NPM Version
         run: npm -v
+
+
+
+# name: System Information
+
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   info:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - uses: actions/checkout@v4
+
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 22
+
+#       - name: Current Directory
+#         run: pwd
+
+#       - name: List Files
+#         run: ls
+
+#       - name: Current Date
+#         run: date
+
+#       - name: Node Version
+#         run: node -v
+
+#       - name: NPM Version
+#         run: npm -v
