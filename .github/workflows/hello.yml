@@ -9,7 +9,8 @@ jobs:
 
     steps:
       - name: Introduction
-        run: echo "Hello! My name is Waqar Ali."
+        # run: echo "Hello! My name is Waqar Ali."
+        run: echo "Hello Waqar! I am learning Pull Requests 🚀"
 
       - name: Goal
         run: echo "I want to become an AI Engineer."
